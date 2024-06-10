@@ -43,6 +43,6 @@ const perguntas = [
         },
     ];
 
-
+let atual = 0; // para começar zerado
 
 
