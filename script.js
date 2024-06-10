@@ -43,6 +43,14 @@ const perguntas = [
         },
     ];
 
-let atual = 0; // para começar zerado
+let atual = 0; // para começar pela pergunta 1.
 
+let perguntaAtual; //recebe o texto e começa vazia. 
+
+function mostraPertunta (){ // chama a pergunta
+perguntaAtual = perguntas [atual] // pegue a pergunta atual e mostre o texto
+caixaPerguntas.textContent = perguntaAtual.enunciado;
+}
+
+mostraPertunta();
 
