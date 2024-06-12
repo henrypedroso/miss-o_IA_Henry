@@ -47,9 +47,18 @@ let atual = 0; // para começar pela pergunta 1.
 
 let perguntaAtual; //recebe o texto e começa vazia. 
 
-function mostraPertunta (){ // chama a pergunta
+function mostraPergunta (){ // chama a pergunta
 perguntaAtual = perguntas [atual] // pegue a pergunta atual e mostre o texto
 caixaPerguntas.textContent = perguntaAtual.enunciado;
+mostraAlternativas();
+}
+
+function mostraAlternativas(){
+    for (const alternativa of perguntaAtual.alternativas){
+        const botaoAlternativas = document.createElement("button");
+        botaoAlternativas.textContent = alternativa;
+        caixaAlternativas.appendChild(botaoAlternativas);
+    }
 }
 
 mostraPertunta();
