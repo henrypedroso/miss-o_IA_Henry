@@ -61,5 +61,5 @@ function mostraAlternativas(){
     }
 }
 
-mostraPertunta();
+mostraPertunta(); 
 
