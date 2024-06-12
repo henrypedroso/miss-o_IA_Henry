@@ -49,7 +49,7 @@ let perguntaAtual; //recebe o texto e começa vazia.
 
 function mostraPergunta (){ // chama a pergunta
 perguntaAtual = perguntas [atual] // pegue a pergunta atual e mostre o texto
-caixaPerguntas.textContent = perguntaAtual.enunciado
+caixaPerguntas.textContent = perguntaAtual.enunciado;
 
 
 }
