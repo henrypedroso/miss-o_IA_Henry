@@ -48,7 +48,7 @@ let atual = 0; // para começar pela pergunta 1.
 let perguntaAtual; //recebe o texto e começa vazia. 
 
 function mostraPergunta (){ // chama a pergunta
-perguntaAtual = perguntas [atual] // pegue a pergunta atual e mostre o texto
+perguntaAtual = perguntas [atual]; // pegue a pergunta atual e mostre o texto
 caixaPerguntas.textContent = perguntaAtual.enunciado;
 
 
