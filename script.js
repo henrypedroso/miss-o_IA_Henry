@@ -50,6 +50,13 @@ let perguntaAtual; //recebe o texto e começa vazia.
 function mostraPergunta() {
     perguntaAtual = perguntas[atual];
     caixaPerguntas.textContent = perguntaAtual.enunciado;
+    mostraAlternativas();
+}
+
+function mostraAlternativas(){
+    for(const alternativa of perguntaAtual.alternativas);
+    const botaoAlternativas.textContent = alternativa;
+    caixaAlternativas.appendChild(botaoAlternativas);
 }
 
 mostraPergunta();
