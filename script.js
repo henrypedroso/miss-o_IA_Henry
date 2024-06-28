@@ -6,67 +6,67 @@ const textoResultado = document.querySelector(".texto-resultado");
 
 const perguntas = [
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado: "Em sua aula de Biologia, você se dá conta de que as mudanças climáticas que estão ocorrendo no planeta são consequências do aquecimento global...",
         alternativas: [
             {
-                texto: "Isso é assustador!",
-                afirmacao: "afirmação"
+                texto: "Isso é perturbador!",
+                afirmacao: "No futuro, com o avanço da tecnologia, deverão surgir profissões que ajudem a diminuir o impacto do homem sobre a natureza." 
             },
             {
-                texto: "Isso é maravilhoso!",
-                afirmacao: "afirmação"
+                texto: "Olha aí uma oportunidade!",
+                afirmacao: "Então esse é o momento de se capacitar em tecnologias promovendo a sua inclusão digital."
             }
         ]
     },
     {
-        enunciado: "Com a descoberta desta tecnologia, chamada Inteligência Artificial, uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado: "Parando para pensar, no colégio que você estuda, já existem áreas do conhecimento que podem ser o primeiro passo para promover sua inclusão digital...",
         alternativas: [
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
-                afirmacao: "afirmação"
+                texto: "Aulas de Programação!",
+                afirmacao: "Nas aulas de programação, você pode produzir páginas web e aplicativos com informações e alertas sobre as condições climáticas." 
             },
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
-                afirmacao: "afirmação"
+                texto: "Aulas de Robótica!",
+                afirmacao: "Nas aulas de Robótica, você pode empreender construindo equipamentos de monitoramento e coleta de dados sobre as condições climáticas."
             }
         ]
     },
     {
-        enunciado: "Após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado: "Você percebe que a programação em JavaScript lembra, em muito, os códigos utilizados no IDE arduíno onde está prototipando...",
         alternativas: [
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
-                afirmacao: "afirmação"
+                texto: "Isso me deixa ainda mais motivado!",
+                afirmacao: "Você tem a sensação de que uma área do conhecimento depende da outra e que ainda, de bônus, é possível aprender na prática diversos conceitos de Matemática e Física." 
             },
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
-                afirmacao: "afirmação"
+                texto: "Oportunidade profissional!",
+                afirmacao: "Diante dos desafios impostos pelo aquecimento global, a programação e a robótica podem te conduzir a um novo nicho profissional que venha a contribuir para um futuro mais sustentável." 
             }
         ]
     },
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado: "Você então com os seus conhecimentos na área da programação e robótica, desenvolve o TitanX, um artefato robótico capaz de emitir sinais de alerta a respeito do aquecimento global...",
         alternativas: [
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
-                afirmacao: "afirmação"
+                texto: "Está ficando perigoso!",
+                afirmacao: "Na sua percepção, os dados coletados na sua região já demonstram um aumento na temperatura quando comparados aos apresentados pelos veículos oficiais." 
             },
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
-                afirmacao: "afirmação"
+                texto: "É preciso tomar uma providência!",
+                afirmacao: "Sua decisão é de publicar os dados num site que você mesmo criou e tornar público as autoridades, a sua preocupação com as consequências do aquecimento global." 
             }
         ]
     },
     {
-        enunciado: "Você tem um trabalho em grupo de biologia para entregar na semana seguinte, o andamento do trabalho está um pouco atrasado e uma pessoa do seu grupo decidiu fazer com ajuda da IA. O problema é que o trabalho está totalmente igual ao do chat. O que você faz? ",
+        enunciado: "Missão cumprida! Vc percebe que através da inclusão digital que seu colégio lhe proporcionou, conseguiu fazer a sua parte contribuindo para a conscientização das autoridades e público em geral...",
         alternativas: [
             {
-                texto: "Escrever comandos para o chat é uma forma de contribuir com o trabalho, por isso não é um problema utilizar o texto inteiro.",
-                afirmacao: "afirmação"
+                texto: "Que massa!",
+                afirmacao: "Durante essa jornada, você percebe que a inclusão digital, além de lhe preparar para um presente e um futuro onde esse tipo de conhecimento predomina, também pode contribuir com a mitigação de desastres naturais." 
             },
             {
-                texto: "O chat pode ser uma tecnologia muito avançada, mas é preciso manter a atenção pois toda máquina erra, por isso revisar o trabalho e contribuir com as perspectivas pessoais é essencial.",
-                afirmacao: "afirmação"
+                texto: "Prevenção é o melhor remédio!",
+                afirmacao: "Somos um só povo e uma só raça! Precisamos nos doar cada um naquilo que pode a fim de tornar a Terra um lugar cada vez melhor para todos."
             }
         ]
     },
@@ -75,7 +75,7 @@ const perguntas = [
 
 let atual = 0;
 let perguntaAtual;
-let historiaFinal = "";
+let historiaFinal = "No futuro, profissões como engenheiros de energia renovável e especialistas em adaptação climática são essenciais para mitigar os efeitos do aquecimento global. A inclusão digital permite que esses profissionais colaborem globalmente, usando tecnologias avançadas para desenvolver soluções sustentáveis e acessíveis a todos.";
 
 function mostraPergunta() {
     if (atual >= perguntas.length) {
